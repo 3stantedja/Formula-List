@@ -5,5 +5,4 @@
 *.fls
 *.log
 *.gz
-Mechanics/.DS_Store
-Pure Maths/.DS_Store
+*.DS_Store
