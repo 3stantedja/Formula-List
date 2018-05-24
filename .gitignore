@@ -1,0 +1,9 @@
+
+*.pdf
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.gz
+Mechanics/.DS_Store
+Pure Maths/.DS_Store

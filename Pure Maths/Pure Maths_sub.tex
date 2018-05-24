@@ -1,0 +1,105 @@
+\documentclass[../"Formula sheet.tex"]{subfiles}
+\begin{document}
+
+%\maketitle
+\section{Pure Mathematics}
+
+\subsection{Algebra}
+\quad \enspace{}For the quadratic equation \(ax^2+bx+c=0\):
+\begin{equation}
+    x=\frac{-b \pm \sqrt{b^2-4ac}}{2a}
+\end{equation}
+
+For an arithmetic series:
+\begin{align}
+    u_n&=a+(n-1)d,     &  S_n&=\frac{n}{2}(a+l) = \frac{n}{2}\{2a+(n-1)d\}
+\end{align}
+
+For a geometric series:
+\begin{align}
+    u_n&=ar^{n-1}, & S_n&=\frac{a(1-r^n)}{1-r} \ (r \neq 1), & S_\infty &=\frac{a}{1-r} \ (|r| < 1)
+\end{align}
+
+Binomial expansion:
+\begin{align}
+    (a + b)^n = a^n + & \binom{n}{1} a^{n-1} b + \binom{n}{2} a^{n-2} b^2 + \binom{n}{3} a^{n-1} b^3 + \dots + b^n, \text{ where \(n\) is a positive integer} \\
+    &\text{and } \binom{n}{r}=\frac{n!}{r!(n-r)!}
+\end{align}
+\begin{align}
+    (1 + x)^n &= 1 + nx + \frac{n(n-1)}{2!} x^2 + \frac{n(n-1)(n-2)}{3!} x^3 + \dots, \text{ where \(n\) is rational and \(|x|<1\)}
+\end{align}
+
+\subsection{Trigonometry}
+\begin{equation}
+    \text{Arc length of circle} =r\theta \text{ (\(\theta\) in radians)}
+\end{equation}
+\begin{equation}
+    \text{Area of sector of circle} =\frac{1}{2}r^2 \theta \text{ (\(\theta\) in radians)}
+\end{equation}
+
+\begin{equation}
+    \tan{\theta} \equiv \frac{\sin{\theta}}{\cos{\theta}}
+\end{equation}
+\begin{align}
+    \cos^2{\theta} + \sin^2{\theta} &\equiv 1,  &  1+\tan^2{\theta} &\equiv \sec^2{\theta},  &  \cot^2{\theta}+1 &\equiv \csc^2{\theta}
+\end{align}
+\begin{align}
+    \sin{(A \pm B)} &= \sin A \cos B \pm \cos A \sin B \\*
+    \cos{(A \pm B)} &= \cos A \cos B \mp \sin A \sin B \\*
+    \tan{(A \pm B)} &= \frac{\tan A \pm \tan B}{1 \mp \tan A \tan B}
+\end{align}
+\begin{align}
+    \sin{2A} &\equiv 2\sin A \cos A \\*
+    \cos{2A} &\equiv \cos^2{A} - \sin^2{A} \equiv 2 \cos^2{A}-1 \equiv 1-2\sin^2{A} \\*
+    \tan{2A} &\equiv \frac{2 \tan A}{1 - \tan^2{A}}
+\end{align}
+
+Principal values:
+\begin{gather}
+    -\frac{1}{2} \pi \leq \sin^{-1}{x} \leq \frac{1}{2} \pi \\
+    0 \leq \cos^{-1}{x} \leq \pi \\
+    -\frac{1}{2} \pi \leq \tan^{-1}{x} \leq \frac{1}{2} \pi
+\end{gather}
+
+\subsection{Differentiation}
+\begin{align}
+    &\mathrm{f}(x)  &  &\mathrm{f}'(x) \nonumber \\
+    &x^n            &  &nx^{n-1} \\
+    &\ln{x}         &  &\frac{1}{x} \\
+    &\mathrm{e}^x   &  &\mathrm{e}^x \\
+    &\sin x         &  &\cos x \\
+    &\cos x         &  &-\sin x \\
+    &\tan x         &  &\sec^2 x \\
+    &uv             &  &{ u\frac{\mathrm{d}v}{\mathrm{d}x}+v\frac{\mathrm{d}u}{\mathrm{d}x}} \\
+    &\frac{u}{v}    &  &\frac{v\dfrac{\mathrm{d}u}{\mathrm{d}x}-u\dfrac{\mathrm{d}v}{\mathrm{d}x}}{v^2}
+\end{align}
+If \(x = \mathrm{f}(t)\) and \(y = \mathrm{g}(t)\) then \(\frac{\mathrm{d}y}{\mathrm{d}x} = \frac{\mathrm{d}y}{\mathrm{d}t} \div \frac{\mathrm{d}x}{\mathrm{d}t}\)
+
+\subsection{Integration}
+\begin{align}
+    &\mathrm{f}(x)  &  &\text{\(\int\)f}(x) \ \mathrm{d}x \nonumber \\
+    &x^n            &  &\frac{x^{n+1}}{n+1} + c \\
+    &\frac{1}{x}    &  &\ln|x| + c \\
+    &\mathrm{e}^x   &  &\mathrm{e}^x + c \\
+    &\sin{x}        &  &-\cos{x} + c \\
+    &\cos{x}        &  &\sin{x} + c \\
+    &\sec^2 x       &  &\tan{x} + c
+\end{align}
+\begin{align}
+    &\int u \frac{\mathrm{d}v}{\mathrm{d}x} \ \mathrm{d}x = uv - \int v \frac{\mathrm{d}u}{\mathrm{d}x} \ \mathrm{d}x \\
+    &\int \frac{\mathrm{f}'(x)}{\mathrm{f}(x)} \ \mathrm{d}x = \ln{|\mathrm{f}(x)|} + c
+\end{align}
+
+\subsection{Vectors}
+\quad \enspace{}If \(\mathbf{a} = a_1\mathbf{i} + a_2\mathbf{j} + a_3\mathbf{k}\) and \(\mathbf{b} = b_1\mathbf{i} + b_2\mathbf{j} + b_3\mathbf{k}\) then
+\begin{equation}
+    \mathbf{a.b} = a_1 b_1 + a_2 b_2 + a_3 b_3 = |\mathbf{a}| |\mathbf{b}| \cos \theta
+\end{equation}
+
+\subsection{Numerical integration}
+\quad \enspace{}Trapezium rule:
+\begin{equation}
+    \int_a^{b} \mathrm{f}(x) \ \mathrm{d}x \approx \frac{1}{2}h\{y_0 + 2(y_1 + y_2 + \dots + y_{n-1}) + y_n\}, \ \text{where \(h = \frac{b-a}{n}\)}
+\end{equation}
+
+\end{document}
