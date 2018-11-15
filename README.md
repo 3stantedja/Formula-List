@@ -15,7 +15,7 @@ I did mention that it'll be (somewhat) short because I intend it to be used as r
 Currently, I'm basing this off Cambridge Assessment's curriculum because I've been in that curriculum for 4 years (so both IGCSE and A Levels), and its main inspiriation is the aformentioned List of Formulae. As time goes on hopefully this will be more relevant to other curricula and even university.
 
 ## How do I contribute?
-You'll need at least a working TeX installation.
+You'll need at least a working TeX installation. The LaTeX Project provide [links][1] for some of the most popular TeX distributions, so at least check it out.
 
 The packages needed to build the document are:
 * latex
